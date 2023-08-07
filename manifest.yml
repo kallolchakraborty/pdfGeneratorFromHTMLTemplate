@@ -1,0 +1,11 @@
+---
+# configuration file
+applications:
+  - name: pdfGenerator
+    routes:
+      - route: pdfGenerator.cfapps.us30.hana.ondemand.com
+    path: ./
+    memory: 64M
+    disk_quota: 384M
+    buildpack: python_buildpack
+    command: python pdfGenerator.py
